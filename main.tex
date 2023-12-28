@@ -1,0 +1,283 @@
+% -- Encoding UTF-8 without BOM
+% -- XeLaTeX => PDF (BIBER)
+
+\documentclass[english]{cv-style}     % Add 'print' as an option into the square bracket to remove colours from this template for printing. 
+                                      % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
+%\setdefaultlanguage{english}
+%\sethyphenation[variant=spanish]{}{}  % Add words between the {} to avoid them to be cut 
+\usepackage{xcolor}
+\usepackage{lipsum}
+\usepackage{graphicx}
+\usepackage{geometry}
+\usepackage{tikz}
+\usepackage{enumitem}
+\usepackage[utf8]{inputenc}
+\usepackage[english]{babel}
+\usepackage{fancyhdr}
+\usepackage{lastpage}
+\usepackage{blindtext}
+
+\pagestyle{fancy}
+\fancyhf{}
+
+\usepackage{hyperref}
+
+\rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+\newcommand{\ExternalLink}{%
+    \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
+        \begin{scope}[x=1ex, y=1ex]
+            \clip (-0.1,-0.1) 
+                --++ (-0, 1.2) 
+                --++ (0.6, 0) 
+                --++ (0, -0.6) 
+                --++ (0.6, 0) 
+                --++ (0, -1);
+            \path[draw, 
+                line width = 0.5, 
+                rounded corners=0.5] 
+                (0,0) rectangle (1,1);
+        \end{scope}
+        \path[draw, line width = 0.5] (0.5, 0.5) 
+            -- (1, 1);
+        \path[draw, line width = 0.5] (0.6, 1) 
+            -- (1, 1) -- (1, 0.6);
+        }
+    }
+    
+\renewcommand{\headrulewidth}{0pt}
+
+\begin{document}
+
+\header{}{Manthan Sharma}
+
+%----------------------------------------------------------------------------------------
+% SIDEBAR SECTION  -- In the aside, each new line forces a line break
+%----------------------------------------------------------------------------------------
+\begin{aside}
+%\
+\vspace{0.6cm}
+\includegraphics[width=4cm]{profile.jpg}
+% \section{-}
+\vspace{0.3cm}
+\section{Designation}
+\vspace{0.3cm}
+Full Stack developer
+%
+\section{Contact}
+\vspace{0.3cm}
++91-6375369971
+\href{mailto:manthan.jsharma@gmail.com}{manthan.jsharma@gmail.com}
+%
+\section{Profiles}
+\vspace{0.3cm}
+\href{https://medium.com/@manthan.jsharma}{Medium \ExternalLink}
+\href{https://github.com/manthan-jsharma}{GitHub \ExternalLink}
+\href{https://stackoverflow.com/users/23162924/manthan-sharma}{Stackoverflow \ExternalLink}
+\href{https://dribbble.com/skibidstance}{Dribbble \ExternalLink}
+\href{https://www.linkedin.com/in/manthan-sharma-12b0332a7/}{LinkedIn \ExternalLink}
+%
+\section{Version Control}
+\vspace{0.3cm}
+Git
+
+\section{Tools}
+\vspace{0.3cm}
+Homebrew
+Node version manager(nvm)
+Jenkins
+Figma
+Framer
+
+\section{Hosting}
+\vspace{0.3cm}
+Netlify
+Heroku
+Github Pages
+
+\section{API development}
+\vspace{0.3cm}
+Postman
+
+\section{Editors/IDEs}
+\vspace{0.3cm}
+Vim
+Atom
+Sublime Text
+VS Code
+Webstorm
+
+
+\section{Hobbies}
+\vspace{0.2cm}
+Anthropology
+Singing,Piano
+Calisthenics,Etymology
+technosphere Enthusiast
+
+
+
+
+
+\end{aside}
+%----------------------------------------------------------------------------------------
+% RESUME SECTION
+%----------------------------------------------------------------------------------------
+\vspace{0.2cm}
+%----------------------------------------------------------------------------------------
+% Skills SECTION
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+% WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\section{Open Source}
+\vspace{-0.2cm}
+
+\begin{entrylist}
+
+\textbf{Mathesar}{\hfill}\\
+\footnotesize{}
+\vspace{-0.4cm}\\
+ \hspace{0.1cm}
+\entry
+  {\scalebox{.8}[1.0]{}}
+  {}
+  {\small{
+    \vspace{-0.4cm}
+    \begin{itemize}[leftmargin=*]
+        \item Mathesar is a straightforward open source tool that provides a spreadsheet-like interface to a PostgreSQL database.
+        \item Technologies: Python, TypeScript, Svelte, PlpgSQL.
+        \item Link: \href{https://github.com/mathesar-foundation}{Mathesar \ExternalLink},  \href{https://github.com/mathesar-foundation/mathesar}{Repository \ExternalLink}
+    \end{itemize}
+  }}
+  {
+ 	\textbf{}\\
+ 	 \vspace{-0.7cm}
+  }
+  \textbf{Novu}{\hfill}\\
+\footnotesize{}
+\vspace{-0.4cm}\\
+ \hspace{0.1cm}
+\entry
+  {\scalebox{.8}[1.0]{}}
+  {}
+  {\small{
+    \vspace{-0.4cm}
+    \begin{itemize}[leftmargin=*]
+        \item Novu is ultimate library for managing multi-channel notifications with a single API.
+        \item React, JavaScript, TypeScript, Node.
+        \item Link: \href{https://novu.co/}{Novu \ExternalLink},  \href{https://github.com/novuhq/novu}{Repository \ExternalLink}
+    \end{itemize}
+  }}
+
+\end{entrylist}
+
+%------------------------------------------------
+
+
+
+
+% \begin{aside}
+% %
+% \section{Hobbies}
+% \vspace{0.2cm}
+% Anthropology
+% Singing,Piano
+% Calisthenics,Etymology
+% technosphere Enthusiast
+% %
+% \section{Strengths}
+% \vspace{0.3cm}
+% Innovative,
+% Creative
+% Quick Learner
+% Persistence
+% Dedicated
+% Leadership Skills
+% optimistic
+% %
+% \end{aside}
+
+
+\section{Side Projects}
+\vspace{-0.3cm}
+\begin{entrylist}
+
+\entrytwo
+  {\scalebox{.8}[1.0]{Sept'20-Oct'20}}
+    {\href{https://jade-lolly-cc5c53.netlify.app/}{\color{headercolor}{Todo-App (Frontend)}} 
+    \ExternalLink \vspace{0.1cm}}
+    {\hfill \footnotesize{React, Redux, Framer motion} \vspace{-0.3cm}}
+  {\small{
+    \begin{itemize}[leftmargin=*]
+        \item This is a Complete Todo Application with all features, with the CRUD operations.
+        \item Used React.js, Redux to manage the states and animations using Framer Motion
+        \item \href{https://jade-lolly-cc5c53.netlify.app/}{Website Preview \ExternalLink},  \href{https://github.com/manthan-jsharma/react-todo-app}{Repository \ExternalLink}
+    \end{itemize}
+  }}
+
+%-------------------------------------------------
+
+\entrytwo
+  {\scalebox{.8}[1.0]{Sept'20-Oct'20}}
+      {\href{https://visionary-tartufo-a1bf9d.netlify.app/}{\color{headercolor}{URL Shortner (Fullstack)}} \ExternalLink \vspace{0.1cm}}
+      {\hfill \footnotesize{Python, Procfile, Html, css, js} \vspace{-0.3cm}}
+  {\small{
+    \begin{itemize}[leftmargin=*]
+        \item A URL shortener is a web-based utility designed to condense and simplify lengthy URLs into shorter
+         \item more manageable links, facilitating easy sharing across various online platforms.
+        \item \href{https://visionary-tartufo-a1bf9d.netlify.app/}{Website Preview \ExternalLink},  \href{https://github.com/manthan-jsharma/url-shortner-backend}{Backend Repository \ExternalLink},  \href{https://github.com/manthan-jsharma/url-shortner-frontend}{Frontend Repository \ExternalLink}
+    \end{itemize}
+  }}
+
+\entrytwo
+  {\scalebox{.8}[1.0]{Apr'20-May'20}}
+  {\href{https://rebrand.ly/8gymw7z}{\color{headercolor}{Landing Page (Design)}} \ExternalLink \vspace{0.1cm}}
+      {\hfill \footnotesize{Figma} \vspace{-0.3cm}}
+  {\small{
+    \begin{itemize}[leftmargin=*]
+        \item Designed and developed a visually appealing landing page showcasing a new product line for a leading chat product.
+        \item The goal was to enhance user engagement and drive conversions
+        \item \href{https://rebrand.ly/8gymw7z}{Figma Preview \ExternalLink},
+    \end{itemize}
+
+}}
+
+\vspace{-0.8cm}
+\end{entrylist}
+\\
+
+  
+%------------------------------------------------
+%----------------------------------------------------------------------------------------
+% EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+\section{Education}
+  \vspace{-0.1cm}
+\begin{entrylist}
+%------------------------------------------------
+\entry
+{\scalebox{.8}[1.0]{2015--2019}}
+{B.Tech, CSE \vspace{0.2cm}}
+{\hfill \footnotesize{Rajasthan Technical University}}
+{\small{Percentage : 72\%} \hfill \footnotesize{2021 -- 2025} \vspace{0.2cm}}
+
+% {\textbf}
+%------------------------------------------------
+\entry
+{\scalebox{.8}[1.0]{2014}}
+{Class 12 \vspace{0.2cm}}
+{\hfill \footnotesize{New Look Sr. Sec. School(CBSE)}}
+{\small{Percentage : 90\%} \hfill \footnotesize{2021} \vspace{0.2cm}}
+%------------------------------------------------
+\entry
+{\scalebox{.8}[1.0]{2012}}
+{Class 10 \vspace{0.2cm}}
+{\hfill \footnotesize{New Look Sr. Sec. School(CBSE)}}
+{\small{CGPA : 9.5} \hfill \footnotesize{2019} \vspace{0.1cm}}
+%------------------------------------------------
+\end{entrylist}
+%--------------------------------------------------------------------------
+
+\end{document}
