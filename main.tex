@@ -1,10 +1,14 @@
 % -- Encoding UTF-8 without BOM
 % -- XeLaTeX => PDF (BIBER)
 
-\documentclass[english]{cv-style}     % Add 'print' as an option into the square bracket to remove colours from this template for printing. 
+\documentclass[british]{cv-style}     % Add 'print' as an option into the square bracket to remove colours from this template for printing. 
                                       % Add 'espanol' as an option into the square bracket to change the date format of the Last Updated Text
-%\setdefaultlanguage{english}
-%\sethyphenation[variant=spanish]{}{}  % Add words between the {} to avoid them to be cut 
+% \setdefaultlanguage{english}
+% \sethyphenation[variant=spanish]{}{}  % Add words between the {} to avoid them to be cut 
+
+\selectlanguage[variant=british]{english}
+\hyphenation{trou-bles}
+
 \usepackage{xcolor}
 \usepackage{lipsum}
 \usepackage{graphicx}
@@ -12,7 +16,7 @@
 \usepackage{tikz}
 \usepackage{enumitem}
 \usepackage[utf8]{inputenc}
-\usepackage[english]{babel}
+\usepackage[british]{babel}
 \usepackage{fancyhdr}
 \usepackage{lastpage}
 \usepackage{blindtext}
@@ -22,7 +26,7 @@
 
 \usepackage{hyperref}
 
-\rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
+% \rfoot{Page \thepage \hspace{1pt} of \pageref{LastPage}}
 \newcommand{\ExternalLink}{%
     \tikz[x=1.2ex, y=1.2ex, baseline=-0.05ex]{% 
         \begin{scope}[x=1ex, y=1ex]
@@ -48,7 +52,7 @@
 
 \begin{document}
 
-\header{}{Manthan Sharma}
+\header{ }{Manthan Sharma}
 
 %----------------------------------------------------------------------------------------
 % SIDEBAR SECTION  -- In the aside, each new line forces a line break
@@ -56,7 +60,7 @@
 \begin{aside}
 %\
 \vspace{0.6cm}
-\includegraphics[width=4cm]{profile.jpg}
+\includegraphics[width=4cm]{profile.jpeg}
 % \section{-}
 \vspace{0.3cm}
 \section{Designation}
@@ -75,6 +79,7 @@ Full Stack developer
 \href{https://stackoverflow.com/users/23162924/manthan-sharma}{Stackoverflow \ExternalLink}
 \href{https://dribbble.com/skibidstance}{Dribbble \ExternalLink}
 \href{https://www.linkedin.com/in/manthan-sharma-12b0332a7/}{LinkedIn \ExternalLink}
+\href{https://leetcode.com/u/denisovan/}{LeetCode\ExternalLink}
 %
 \section{Version Control}
 \vspace{0.3cm}
@@ -93,6 +98,7 @@ Framer
 Netlify
 Heroku
 Github Pages
+Render
 
 \section{API development}
 \vspace{0.3cm}
@@ -107,22 +113,18 @@ VS Code
 Webstorm
 
 
+
 \section{Hobbies}
 \vspace{0.2cm}
 Anthropology
 Singing,Piano
 Calisthenics,Etymology
 technosphere Enthusiast
-
-
-
-
-
 \end{aside}
 %----------------------------------------------------------------------------------------
 % RESUME SECTION
 %----------------------------------------------------------------------------------------
-\vspace{0.2cm}
+% \vspace{0.2cm}
 %----------------------------------------------------------------------------------------
 % Skills SECTION
 %----------------------------------------------------------------------------------------
@@ -131,47 +133,82 @@ technosphere Enthusiast
 % WORK EXPERIENCE SECTION
 %----------------------------------------------------------------------------------------
 
-\section{Open Source}
-\vspace{-0.2cm}
+\vspace{-0.5cm}  
+\section{Work Experience \vspace{-0.3cm} }
+\href{https://www.bettertechnify.com/}{ \textbf{\large{Founder, Better Technify }}\ExternalLink}
+% \v. pace{-0.5cm}
+% \section{\large{{\color{headercolor}{Founder, Better Technify}}}}
+\vspace{0.1cm}
 
 \begin{entrylist}
 
-\textbf{Mathesar}{\hfill}\\
-\footnotesize{}
-\vspace{-0.4cm}\\
- \hspace{0.1cm}
-\entry
+
+\entrytwo
   {\scalebox{.8}[1.0]{}}
-  {}
+    {\href{}{\color{headercolor}{ Teach Your Peer}} 
+     \vspace{0.1cm}}
+    {\hfill \footnotesize{Next, Redux, Framer motion, NextAuth, Postgress} \vspace{-0.5cm}}
   {\small{
-    \vspace{-0.4cm}
     \begin{itemize}[leftmargin=*]
-        \item Mathesar is a straightforward open source tool that provides a spreadsheet-like interface to a PostgreSQL database.
-        \item Technologies: Python, TypeScript, Svelte, PlpgSQL.
-        \item Link: \href{https://github.com/mathesar-foundation}{Mathesar \ExternalLink},  \href{https://github.com/mathesar-foundation/mathesar}{Repository \ExternalLink}
+        \item Spearheaded the design and deployment of a \textbf{EdTech} platform, seamlessly integrating critical features to drive engagement and learning outcome.
+        \item \textbf{Filter Searches}: Quick and precise search functionality for courses, instructors, and resources
+        \item \textbf{Video Meetings}: Used Cal.com and Google Calender Api to integrated virtual classroom for real-time interactions
+        \item Built a robust \textbf{credit system} with Node.js, facilitating user credit applications for courses, instructors, and ensuring credit retention for future use.
+        % \item Implemented google authentication, authorization, and privacy controls to ensure secure and stable connection.
+
+        \item \href{https://www.teachyourpeer.com/}{Landing Page \ExternalLink}, \href{https://app.teachyourpeer.com/login}{Web App Preview \ExternalLink}
     \end{itemize}
   }}
-  {
- 	\textbf{}\\
- 	 \vspace{-0.7cm}
-  }
-  \textbf{Novu}{\hfill}\\
-\footnotesize{}
-\vspace{-0.4cm}\\
- \hspace{0.1cm}
-\entry
+
+\entrytwo
   {\scalebox{.8}[1.0]{}}
-  {}
+    {\href{}{\color{headercolor}{Dollar For teen}} 
+     \vspace{0.1cm}}
+    {\hfill \footnotesize{Next, Shadcn, Passport.js, Postgress, Sqlite,GraphQl} \vspace{-0.5cm}}
   {\small{
-    \vspace{-0.4cm}
     \begin{itemize}[leftmargin=*]
-        \item Novu is ultimate library for managing multi-channel notifications with a single API.
-        \item React, JavaScript, TypeScript, Node.
-        \item Link: \href{https://novu.co/}{Novu \ExternalLink},  \href{https://github.com/novuhq/novu}{Repository \ExternalLink}
+        \item Designed and implemented a scalable internship platform, connecting students and employers.
+        \item Used Next.js,Redux Tool-Kit to manage the states and animations using Framer Motion.
+        \item Optimized platform for mobile responsiveness and accessibility.
+        \item Established transparent review and rating system to ensure accountability and credibility, empowering users to make informed decisions.
+
+        \item \href{https://dollarforteen.com/}{Web App Preview \ExternalLink}
+    \end{itemize}
+  }}
+
+
+\entrytwo
+  {\scalebox{.8}[1.0]{}}
+    {\href{}{\color{headercolor}{Center Of Complex Interventions (Open Source)}} 
+    \ExternalLink \vspace{0.1cm}}
+    {\hfill \footnotesize{Svelte, Django, Docker, Postgress, Procfile, Python} \vspace{-0.5cm}}
+  {\small{
+    \begin{itemize}[leftmargin=*]
+        \item Mathesar is a straightforward open source tool that provides a spreadsheet-like interface to a PostgreSQL database.
+        % \item Optimized platform for mobile responsiveness and accessibility.
+        \item \href{https://github.com/mathesar-foundation}{Mathesar \ExternalLink},  \href{https://github.com/mathesar-foundation/mathesar}{Repository \ExternalLink}
     \end{itemize}
   }}
 
 \end{entrylist}
+
+
+
+
+
+
+  
+%------------------------------------------------
+%----------------------------------------------------------------------------------------
+% EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+
+
+
+
+
+
 
 %------------------------------------------------
 
@@ -200,29 +237,32 @@ technosphere Enthusiast
 % \end{aside}
 
 
+\vspace{-0.5cm}
 \section{Side Projects}
 \vspace{-0.3cm}
 \begin{entrylist}
 
+
 \entrytwo
   {\scalebox{.8}[1.0]{Sept'20-Oct'20}}
-    {\href{https://jade-lolly-cc5c53.netlify.app/}{\color{headercolor}{Todo-App (Frontend)}} 
-    \ExternalLink \vspace{0.1cm}}
-    {\hfill \footnotesize{React, Redux, Framer motion} \vspace{-0.3cm}}
+    {\href{}{\color{headercolor}{Scribes(Hackathon)}} 
+     \vspace{0.1cm}}
+    {\hfill \footnotesize{vanilla.js, Template Engines, GSAP, NodeMailer, WebSockets} \vspace{-0.5cm}}
   {\small{
     \begin{itemize}[leftmargin=*]
-        \item This is a Complete Todo Application with all features, with the CRUD operations.
-        \item Used React.js, Redux to manage the states and animations using Framer Motion
-        \item \href{https://jade-lolly-cc5c53.netlify.app/}{Website Preview \ExternalLink},  \href{https://github.com/manthan-jsharma/react-todo-app}{Repository \ExternalLink}
-    \end{itemize}
+        \item Designed and developed a real-time collaborative and CRM blogging platform at a 36 hr National Hackathon using WebSockets, enabling simultaneous content creation and editing.
+        \item Recommendation system development and Real-Time Collaboration invite using \textbf{NodeMailer} and \textbf{WebSocket}.
+         \item Collaborating with \textbf{Hyoonix Innovations(pune)} to maximize marketing prospects and commercial status.
+         \item \href{https://scribes-collab.onrender.com/}{Website Preview \ExternalLink}
+         \end{itemize}
+        
+       
   }}
-
-%-------------------------------------------------
 
 \entrytwo
   {\scalebox{.8}[1.0]{Sept'20-Oct'20}}
       {\href{https://visionary-tartufo-a1bf9d.netlify.app/}{\color{headercolor}{URL Shortner (Fullstack)}} \ExternalLink \vspace{0.1cm}}
-      {\hfill \footnotesize{Python, Procfile, Html, css, js} \vspace{-0.3cm}}
+      {\hfill \footnotesize{Python, Procfile, Anaconda(IDE), React, Django} \vspace{-0.5cm}}
   {\small{
     \begin{itemize}[leftmargin=*]
         \item A URL shortener is a web-based utility designed to condense and simplify lengthy URLs into shorter
@@ -231,37 +271,22 @@ technosphere Enthusiast
     \end{itemize}
   }}
 
-\entrytwo
-  {\scalebox{.8}[1.0]{Apr'20-May'20}}
-  {\href{https://rebrand.ly/8gymw7z}{\color{headercolor}{Landing Page (Design)}} \ExternalLink \vspace{0.1cm}}
-      {\hfill \footnotesize{Figma} \vspace{-0.3cm}}
-  {\small{
-    \begin{itemize}[leftmargin=*]
-        \item Designed and developed a visually appealing landing page showcasing a new product line for a leading chat product.
-        \item The goal was to enhance user engagement and drive conversions
-        \item \href{https://rebrand.ly/8gymw7z}{Figma Preview \ExternalLink},
-    \end{itemize}
-
-}}
-
 \vspace{-0.8cm}
 \end{entrylist}
 \\
+%-------------------------------------------------
 
-  
-%------------------------------------------------
-%----------------------------------------------------------------------------------------
-% EDUCATION SECTION
-%----------------------------------------------------------------------------------------
+\vspace{-0.75cm} % 
+
 \section{Education}
-  \vspace{-0.1cm}
+\vspace{-0.1cm}
 \begin{entrylist}
 %------------------------------------------------
 \entry
 {\scalebox{.8}[1.0]{2015--2019}}
 {B.Tech, CSE \vspace{0.2cm}}
 {\hfill \footnotesize{Rajasthan Technical University}}
-{\small{Percentage : 72\%} \hfill \footnotesize{2021 -- 2025} \vspace{0.2cm}}
+{\small{Percentage : 72\%} \hfill \footnotesize{2021 -- 2025} \vspace{0.0cm}}
 
 % {\textbf}
 %------------------------------------------------
@@ -269,15 +294,14 @@ technosphere Enthusiast
 {\scalebox{.8}[1.0]{2014}}
 {Class 12 \vspace{0.2cm}}
 {\hfill \footnotesize{New Look Sr. Sec. School(CBSE)}}
-{\small{Percentage : 90\%} \hfill \footnotesize{2021} \vspace{0.2cm}}
+{\small{Percentage : 90\%} \hfill \footnotesize{2021} \vspace{-0.05cm}}
 %------------------------------------------------
 \entry
 {\scalebox{.8}[1.0]{2012}}
 {Class 10 \vspace{0.2cm}}
 {\hfill \footnotesize{New Look Sr. Sec. School(CBSE)}}
-{\small{CGPA : 9.5} \hfill \footnotesize{2019} \vspace{0.1cm}}
+{\small{CGPA : 9.5} \hfill \footnotesize{2019} \vspace{-0.05cm}}
 %------------------------------------------------
 \end{entrylist}
 %--------------------------------------------------------------------------
-
 \end{document}
